@@ -6,6 +6,7 @@
   node_bundler = "esbuild"
   external_node_modules = []
 
+
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/api/:splat"
