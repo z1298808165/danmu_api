@@ -16,3 +16,7 @@
   from = "/*"
   to = "/.netlify/functions/api"
   status = 200
+
+[build.environment]
+  # 使用逗号分隔多个需要忽略的文件路径（路径相对于项目根目录）
+  SECRETS_SCAN_OMIT_PATHS = "danmu_api/sources/renren.js, danmu_api/sources/iqiyi.js"
