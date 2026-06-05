@@ -2,6 +2,9 @@
   command = "mkdir -p netlify/functions"
   publish = "."
 
+[build.environment]
+  SECRETS_SCAN_OMIT_PATHS = "danmu_api/sources/renren.js,danmu_api/sources/iqiyi.js"
+
 [functions]
   node_bundler = "esbuild"
   external_node_modules = []
